@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saree Sangam - Elegant Sarees & Ethnic Wear</title>
+<meta name="description" content="Saree Sangam - a curated collection of beautiful sarees and ethnic wear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Saree Sangam</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Saree Sangam</h1>
+    <p>A curated collection of beautiful sarees, woven with tradition and elegance.</p>
+    <a href="index.html#products" class="btn">View Our Products</a>
+  </div>
+</section>
+
+<section class="about container">
+  <h2>Welcome</h2>
+  <p>
+    Saree Sangam brings you a handpicked selection of sarees and ethnic wear for every occasion —
+    from everyday elegance to festive celebrations. Browse our latest collection below, and reach
+    out to us on the <a href="contact.html">Contact page</a> to place an order or ask about
+    availability, pricing and sizing.
+  </p>
+</section>
+
+<section id="products" class="products container">
+  <h2>Our Products</h2>
+  <p id="gallery-status" class="gallery-status">Loading products…</p>
+  <div id="gallery" class="gallery"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Saree Sangam. All rights reserved.</p>
+    <p><a href="contact.html">Contact us</a></p>
+  </div>
+</footer>
+
+<script src="js/gallery.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
