@@ -24,7 +24,6 @@
 .enquire { display: inline-block; margin-top: 0.4rem; font-size: 0.8rem; }
 .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; text-align: center; padding-top: 3rem; padding-bottom: 3rem; }
 .why p { color: var(--clr-muted); font-size: 0.9rem; }
-@media (max-width: 560px) { .nav a { margin-left: 0.8rem; font-size: 0.85rem; } .anchi-grid .gallery-item img { height: 260px; } }
 
 .size-filter { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
 .size-btn { font: inherit; font-size: 0.8rem; padding: 0.3rem 0.8rem; border: 1px solid #ddd; background: #fff; border-radius: 999px; cursor: pointer; }
@@ -41,3 +40,28 @@
 .lb-info { padding: 1.5rem; min-width: 200px; }
 .lb-sizes { color: var(--clr-muted); font-size: 0.9rem; }
 @media (max-width: 700px) { .lb-content { flex-direction: column; gap: 0; overflow-y: auto; } .lb-content img { max-width: 100%; max-height: 65vh; } }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .announce { font-size: 0.7rem; padding: 0.4rem 0.75rem; line-height: 1.3; }
+  .site-header .header-inner { flex-direction: column; gap: 0.1rem; padding: 0.4rem 0.75rem 0.5rem; }
+  .anchi-logo img { height: 72px; }
+  .nav { display: flex; justify-content: center; gap: 1.1rem; flex-wrap: nowrap; }
+  .nav a { margin-left: 0; font-size: 0.85rem; white-space: nowrap; }
+  .breadcrumb { font-size: 0.78rem; padding-top: 0.6rem; }
+  .cat-tiles { gap: 0.5rem 0.4rem; padding-top: 1rem; }
+  .cat-tile { width: 30%; font-size: 0.75rem; }
+  .cat-circle { width: 56px; height: 56px; font-size: 1.2rem; }
+  .collection-head h1 { font-size: 1.5rem; }
+  .collection-head p { font-size: 0.85rem; }
+  .toolbar { font-size: 0.8rem; }
+  .toolbar select { font-size: 0.8rem; max-width: 150px; }
+  .size-filter { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.3rem; -webkit-overflow-scrolling: touch; }
+  .size-btn { flex: 0 0 auto; }
+  .anchi-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .anchi-grid .gallery-item img { height: 230px; }
+  .anchi-grid .caption { font-size: 0.8rem; padding: 0.4rem 0.1rem; }
+  .anchi-grid .price { font-size: 0.85rem; }
+  .enquire { font-size: 0.72rem; }
+  .why { padding-top: 1.5rem; padding-bottom: 1.5rem; gap: 1rem; }
+}
