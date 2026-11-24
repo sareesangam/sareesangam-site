@@ -136,13 +136,18 @@ async function load() {
   const status = document.getElementById("gallery-status");
   const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${PRODUCTS_FOLDER}?ref=${GITHUB_BRANCH}`;
   try {
-    let files;
-    try {
+    const fromApi = async () => {
       const res = await fetch(url);
       if (!res.ok) throw new Error("Could not read products folder (" + res.status + ")");
-      files = await res.json();
-    } catch (apiErr) {
-      files = await loadLocal(apiErr);
+      return res.json();
+    };
+    // On localhost, prefer the local folder (preview unpushed changes); online, use GitHub.
+    const isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+    let files;
+    try {
+      files = isLocal ? await loadLocal(new Error("no local listing")) : await fromApi();
+    } catch (firstErr) {
+      files = isLocal ? await fromApi() : await loadLocal(firstErr);
     }
     products = files.filter(f => f.type === "file" && IMAGE_EXT.test(f.name)).map(parse);
     status.textContent = "";

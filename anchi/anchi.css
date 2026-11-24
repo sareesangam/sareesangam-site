@@ -1,5 +1,8 @@
 .announce { background: var(--clr-primary-dark); color: #fff; text-align: center; font-size: 0.8rem; padding: 0.5rem 1rem; }
-.anchi-logo { letter-spacing: 0.15em; text-transform: uppercase; }
+.site-header { background: var(--clr-bg); border-bottom: 0; }
+.site-header .header-inner { padding-top: 0.4rem; padding-bottom: 0.4rem; }
+.anchi-logo { display: block; line-height: 0; }
+.anchi-logo img { height: 110px; width: auto; display: block; }
 .breadcrumb { padding-top: 1rem; font-size: 0.85rem; color: var(--clr-muted); }
 .cat-tiles { display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; padding-top: 1.5rem; padding-bottom: 0.5rem; }
 .cat-tile { background: none; border: 0; cursor: pointer; font: inherit; font-size: 0.85rem; color: var(--clr-text); display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }

@@ -27,6 +27,7 @@ Allowed image types: jpg, jpeg, png, webp, gif. Use no spaces in the file name.
 | Khadi | `khadi` | `khadi-white-kurti_1499_M-L-XL-XXL.jpg` |
 | Short Kurti | `short` | `short-kurti-blue_899_XS-S-M-L.jpg` |
 | Tunic | `tunic` (or `tulic`) | `tunic-turquoise_999_S-M-L-XL-XXL.jpg` |
+| Co-ord Sets | `coord` (or `co-ord`) | `blue-batik-print-coord-set_1799_S-M-L-XL.jpg` |
 
 A photo with none of these words still appears under **All**, just not under a category tile.
 
@@ -75,7 +76,3 @@ A photo with no sizes in its name never matches a size filter, but still appears
 
 From the site folder run `python -m http.server 8000`, then open
 `http://127.0.0.1:8000/anchi/index.html`. The page reads the local folder when run on localhost.
-
-## Note
-
-The photos currently in this folder are free Pexels stock images used as placeholders. Replace them with your real Anchi photos.
