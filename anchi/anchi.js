@@ -1,8 +1,8 @@
-// Same GitHub-folder approach as the main site, reading products/anchee.
+// Same GitHub-folder approach as the main site, reading products/anchi.
 const GITHUB_USER = "sareesangam";
 const GITHUB_REPO = "sareesangam-site";
 const GITHUB_BRANCH = "main";
-const PRODUCTS_FOLDER = "products/anchee";
+const PRODUCTS_FOLDER = "products/anchi";
 const WHATSAPP = "919471005355";
 
 const IMAGE_EXT = /\.(jpe?g|png|webp|gif)$/i;
@@ -49,7 +49,7 @@ function closeLightbox() {
   document.body.style.overflow = "";
 }
 function whatsappLink(p) {
-  return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hi, I am interested in Anchee: " + p.title);
+  return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hi, I am interested in Anchi: " + p.title);
 }
 
 function render() {
